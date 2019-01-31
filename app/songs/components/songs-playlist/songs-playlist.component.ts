@@ -7,10 +7,11 @@ import {Observable, Subscription} from "rxjs";
   selector: "songs-playlist",
   template:`
     <div class="songs">
-      <div *ngFor="let song of playlist$ | async">
-        <strong>{{song.artist}}</strong>
-        {{song.track}}
-      </div>
+      <songs-list
+        [list]="playlist$ | async"
+      >
+        Playlist
+      </songs-list>
     </div>
   `
 })

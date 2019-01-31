@@ -7,10 +7,11 @@ import {Observable} from "rxjs";
   selector: "songs-favourites",
   template: `
     <div class="songs">
-      <div *ngFor="let song of favourites$ | async">
-        <strong>{{song.artist}}</strong>
-        {{song.track}}
-      </div>
+      <songs-list
+        [list]="favourites$ | async"
+      >
+        Favourites
+      </songs-list>
     </div>
   `
 })
@@ -24,7 +25,7 @@ export class SongsFavouritesComponent implements OnInit{
   ngOnInit() {
     this.favourites$ = this.store.select("playlist")
       .filter(Boolean)
-      .map(playlist => playlist.filter(song => song.favourites))
+      .map(playlist => playlist.filter(song => song.favourite))
   }
 
 }
