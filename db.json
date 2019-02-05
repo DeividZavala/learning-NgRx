@@ -1,32 +1,28 @@
 {
   "playlist": [
     {
-      "id": 1,
-      "artist": "Oasis",
-      "track": "Half The World Away",
-      "listened": false,
-      "favourite": true
+      "id": 1
     },
     {
       "id": 2,
       "artist": "Pink Floyd",
       "track": "Wish You Were Here",
       "listened": true,
-      "favourite": false
+      "favourite": true
     },
     {
       "id": 3,
       "artist": "Blink-182",
       "track": "All The Small Things",
       "listened": false,
-      "favourite": true
+      "favourite": false
     },
     {
       "id": 4,
       "artist": "Third Eye Blind",
       "track": "Get Me Out Of Here",
       "listened": true,
-      "favourite": false
+      "favourite": true
     },
     {
       "id": 5,
@@ -40,13 +36,13 @@
       "artist": "Sia",
       "track": "Cheap Thrills",
       "listened": true,
-      "favourite": true
+      "favourite": false
     },
     {
       "id": 7,
       "artist": "Birdy",
       "track": "Wild Horses",
-      "listened": false,
+      "listened": true,
       "favourite": true
     },
     {
@@ -54,7 +50,7 @@
       "artist": "Stereophonics",
       "track": "Local Boy In The Photograph",
       "listened": false,
-      "favourite": false
+      "favourite": true
     }
   ]
 }
